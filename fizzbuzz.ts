@@ -20,21 +20,21 @@
  * fizzBuzz();
  */
 function fizzBuzz(): void {
-     for (let i = 1; i <= 100; ++i) {
-          // First we need to make sure that the numbers are divisibl by 3 and 5
-         let divisibleByThree = i % 3 == 0;
-         let divisibleByFive = i % 5 == 0;
- 
-         if (divisibleByThree && divisibleByFive) {
-             console.log("fizzBuzz"); // Doesn't need to have a return 'cause this program is just printing the values
-         } else if (divisibleByFive) {
-             console.log("buzz");
-         } else if (divisibleByThree) {
-             console.log("fizz");
-         } else {
-             console.log(i);
-         }
-     }
- }
- 
- fizzBuzz();
+    for (let i = 1; i <= 100; ++i) {
+        // First we need to make sure that the numbers are divisibl by 3 and 5
+        let divisibleByThree = i % 3 == 0;
+        let divisibleByFive = i % 5 == 0;
+
+        if (divisibleByThree && divisibleByFive) {
+            console.log("fizzBuzz"); // Doesn't need to have a return 'cause this program is just printing the values
+        } else if (divisibleByFive) {
+            console.log("buzz");
+        } else if (divisibleByThree) {
+            console.log("fizz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+fizzBuzz();

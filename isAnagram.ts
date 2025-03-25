@@ -15,7 +15,7 @@
  */
 function isAnagrama(str1: string, str2: string): boolean {
     // Normalize the strings: convert to lowercase and remove non-alphabetic characters
-    const normalize = (str: string) => str.toLowerCase().replace(/[^a-z]/g, '');
+    const normalize = (str: string) => str.toLowerCase().replace(/[^a-z]/g, "");
     const normalizeStr1 = normalize(str1);
     const normalizeStr2 = normalize(str2);
 
@@ -31,6 +31,7 @@ function isAnagrama(str1: string, str2: string): boolean {
         // 2. sort() - sort the array of characters in alphabetical order
         // 3. join() - join the sorted array of each character back into a string
         // the we compare the two strings to make sure if they are equals
-        normalizeStr1.split("").sort().join("") === normalizeStr2.split("").sort().join("")
+        normalizeStr1.split("").sort().join("") ===
+        normalizeStr2.split("").sort().join("")
     );
 }
